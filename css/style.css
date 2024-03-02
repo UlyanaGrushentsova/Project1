@@ -1,0 +1,911 @@
+@font-face {
+	font-family: 'OpenSans-Italic';
+	font-style: normal;
+  	font-weight: 400;
+	src: url('../fonts/OpenSans-Italic.eot') format('embedded-opentype'),
+	url('../fonts/OpenSans-Italic.woff') format('woff'),
+	url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	font-style: normal;
+  	font-weight: 400;
+	src: url('../fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-Bold';
+	font-style: normal;
+  	font-weight: 700;
+	src: url('../fonts/OpenSans-Bold.eot') format('embedded-opentype'),
+	url('../fonts/OpenSans-Bold.woff') format('woff'),
+	url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-SemiBold';
+	font-style: normal;
+  	font-weight: 600;
+	src: url('../fonts/OpenSans-SemiBold.eot') format('embedded-opentype'),
+	url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+	url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'OpenSans-SemiBold';
+	font-style: normal;
+  	font-weight: 800;
+	src: url('../fonts/OpenSans-ExtraBold.eot') format('embedded-opentype'),
+	url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+	url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page1 {
+    background-color: #F6F2F2;
+    height: 688px;
+    width: 1579px;
+}
+
+.head { 
+    background-color: #000000;
+    width: 1209px;
+    height: 89px;
+    display: flex;
+    list-style: none; /*превращает меню из нескольких строк в одну строку*/
+	justify-content: center; /*выравнивание элементов по центру*/
+	margin-left: 164px;
+	margin-top: 29px; 
+}
+.head li {
+    margin: 33px 10px 0px 10px; /*отступ содержимого от границ*/   
+}
+.head a {
+    color: #E0E0E0;
+	font-size: 14px;
+	font-weight: bold;
+    text-decoration: none; /*убирает подчеркивание ссылки*/
+    text-transform: uppercase; /*делает буквы капсом*/
+    height: 89px;
+    padding: 35px 35px;
+}
+.head a:hover { /*при наведении мышки меняет цвет*/
+	background-color: #FF3F40;   
+}
+
+.box1, 
+.box2{ 
+    width: 1290px;
+    height: 359px;
+    display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between; /*выравнивание элементов с одинаковым расстоянием между элементами*/
+    margin-left: 163px;      
+}
+.box1 h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-ExtraBold', sans-serif;
+    line-height: 67px; /*межстрочный интервал*/
+    letter-spacing: 1.5px; /*межбуквенный интервал*/
+    word-break: break-word; /*перенос по буквам*/
+	hyphens: auto; /*дефис при переносе*/
+    width: 618px;
+    height: 117px;
+	margin-top: 80px;
+}
+.box1 p {
+	line-height: 30px;
+	width: 540px;
+	margin-bottom: 51px;
+}
+.box1 img {
+	Width: 554px;
+	Height: 359px;
+	margin-top: 90px;
+	margin-left: 40px;
+}
+.box1 button {
+	width: 227px;
+	padding: 16px 0;
+	border: 0; /*убирает толщину рамки кнопки*/
+	border-radius: 5px;
+	background: #FF2D2D;
+}
+.box1 a {
+	text-decoration: none;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-Size: 18px;
+	color: #FFFFFF;
+}
+.box2{
+	height: 588px;
+	margin-top: 70px;
+}
+.box2 h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    line-height: 55px; /*межстрочный интервал*/
+    letter-spacing: 0.4px; /*межбуквенный интервал*/
+    word-break: break-word; /*перенос по буквам*/
+	hyphens: auto; /*дефис при переносе*/
+    width: 523px;
+    height: 87px;
+
+}
+.box2 p {
+	line-height: 28px;
+	width: 539px;
+	margin-top: 55px;
+}
+.box2 button {
+	width: 227px;
+	padding: 16px 0;
+	border: 2px; /*убирает толщину рамки кнопки*/
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	border-color: #FF0000;
+	border-style: solid;
+	margin-top: 40px;
+}
+.box2 a {
+	text-decoration: none;
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	font-Size: 18px;
+	color: #FF2D2D;
+}
+.image {
+	display: flex;
+	flex-flow: row wrap;
+	width: 700px;
+	height: 485px;
+	margin-left: 85px;
+}
+.image h1 {
+	font-size: 24px;
+    font-family: 'OpenSans-regular', sans-serif;
+    letter-spacing: 0.3px; /*межбуквенный интервал*/
+    text-transform: none;
+	margin: 10px;
+	margin-left: -1px;
+
+}
+.image p {
+	font-size: 16px;
+    font-family: 'OpenSans-regular', sans-serif;
+    letter-spacing: 0.3px; /*межбуквенный интервал*/
+    line-height: 28px; /*межстрочный интервал*/
+	width: 320px;
+	margin-top: -50px;
+
+}
+.image img{
+	width: 40px;
+	height: 40px;
+}
+
+.block {
+	width: 300px;
+	margin-top: 35px;
+	margin-left: 20px;
+}
+
+
+.box3 { 
+    width: 1432px;
+    height: 930px;
+    margin-left: 75px; 
+	margin-top: 30px;     
+}
+
+.box3 h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    letter-spacing: 0.4px; /*межбуквенный интервал*/
+    width: 453px;
+    height: 32px;
+	padding-left: 517px;
+	padding-top: 65px;
+}
+.box3 p {
+	font-size: 16px;
+	line-height: 28px;
+	width: 537px;
+	height: 45px;
+	margin-top: 55px;
+	text-align: center;
+	padding-left: 460px;
+	margin-top: 40px;
+}
+.hr1 {
+	border-color: #ECECEC;
+	Width: 1251px;
+}
+.hr2 {
+	border-color: #FF2D2D;
+	Width: 134px;
+	margin-top: 38px;
+	margin-left: 660px;
+}
+.menu { 
+    width: 1122px;
+    height: 24px;
+    display: flex;
+    list-style: none; /*превращает меню из нескольких строк в одну строку*/
+	justify-content: center; /*выравнивание элементов по центру*/
+	margin-left: 110px;
+	margin-top: 85px;
+
+}
+.menu li {
+    padding-left: 55px;   
+}
+.menu a {
+	color: #000000;
+	font-size: 22px;
+	font-family: 'OpenSans-Bold', sans-serif;
+    text-decoration: none; /*убирает подчеркивание ссылки*/
+    text-transform: uppercase; /*делает буквы капсом*/
+}
+.menu a:hover { /*при наведении мышки меняет цвет*/
+	color: #FF2D2D;   
+}
+.image2{
+	margin-top: 65px;
+	margin-left: 90px;
+}
+.image2 img{
+	padding: 0px 15px 15px 0px;
+}
+
+
+
+.box4 { 
+    width: 1301px;
+    height: 710px; 
+	margin: 220px 0 0 162px;
+}
+.box4 h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    letter-spacing: 0.4px; /*межбуквенный интервал*/
+    width: 374px;
+    height: 32px;
+}
+.box4 p {
+	font-size: 16px;
+	line-height: 28px;
+	width: 469px;
+	height: 73px;
+	padding-top: 15px;
+}
+.hr3 {
+	border-color: #FF2D2D;
+	Width: 134px;
+	margin: 45px 0 0 0;
+}
+
+.image3 { 
+    width: 1301px;
+    height: 462px;
+    display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between; /*выравнивание элементов с одинаковым расстоянием между элементами*/
+    margin: 65px 0 0 -50px;   
+}
+.block2{
+	margin: -10px 0 0 -20px;
+}
+.block2 h1{
+	font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-regular', sans-serif;
+    letter-spacing: 0.3px; /*межбуквенный интервал*/
+    width: 240px;
+    height: 23px;
+	padding-left: 45px;
+}
+.block2 p {
+	font-size: 16px;
+	line-height: 28px;
+	width: 663px;
+	height: 45px;
+	padding-left: 45px;
+}
+.block2 ul { 
+    width: 401px;
+    height: 24px;
+    display: flex;
+    list-style: none; /*превращает меню из нескольких строк в одну строку*/
+	margin: 50px 0 0 -35px;
+	
+}
+.block2 li {
+    padding-left: 40px;   
+}
+.block2 a {
+	color: #000000;
+	font-size: 18px;
+	font-family: 'OpenSans-italic', sans-serif;
+    text-decoration: none; /*убирает подчеркивание ссылки*/
+}
+.image4{
+	margin-top: 55px;
+	margin-left: 30px;*/
+}
+.image4 img{
+	padding-left: 15px;
+}
+
+
+.box5 {
+	background-color: #000000;
+	width: 1579px;
+	height: 516px;
+	margin-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.box5 h1 {
+    font-size: 42px;
+    font-family: 'OpenSans-Bold', sans-serif;
+	line-height: 24px;
+    letter-spacing: 1px; /*межбуквенный интервал*/
+    width: 1129px;
+    height: 43px;
+	color: #FFFFFF;
+	padding: 130px 0 0 20px;
+}
+.box5 p {
+	font-size: 16px;
+	line-height: 28px;
+	width: 574px;
+	height: 26px;
+	color: #FFFFFF;
+	margin: -20px 0 0 300px;
+}
+.box5 form{
+	padding-top: 55px;
+}
+.box5 input{
+	width: 524px;
+	height: 82px;
+	border-radius: 10px;
+}
+.box5 button{
+	width: 217px;
+	height: 82px;
+	border-radius: 10px;
+	background-color: #FF2D2D;
+	margin-left: 15px;
+	font-size: 18px;
+    text-transform: uppercase;
+	color: #FFFFFF;
+}
+.box5 input::placeholder {
+	font-size: 16px;
+	padding-left: 40px;
+  }
+
+
+.box6{
+	width: 1419px;
+	height: 771px;
+	margin-left: 161px;
+	display: flex;
+	flex-direction: row;
+  }
+.block3{
+	width: 757px;
+	height: 771px;
+	margin-top: 60px;
+  }
+.block3 h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    letter-spacing: 0.4px; /*межбуквенный интервал*/
+    width: 329px;
+    height: 32px;
+}
+.block3 p {
+	font-size: 16px;
+	line-height: 28px;
+	width: 753px;
+	height: 73px;
+	padding-top: 30px;
+}
+.block3 hr {
+	border-color: #FF2D2D;
+	Width: 134px;
+	margin: 60px 0 0 0;
+}
+.put1{
+	margin: 80px 0 0 -45px;
+}
+.put1 input{
+	width: 342px;
+	height: 71px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #F6F2F2;
+	margin-left: 42px;
+}
+.put2 input{
+	width: 734px;
+	height: 252px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #F6F2F2;
+	margin-top: 40px;
+}
+.put2 button{
+	width: 731px;
+	height: 75px;
+	border-radius: 10px;
+	background-color: #FF2D2D;
+	font-size: 18px;
+    text-transform: uppercase;
+	color: #FFFFFF;
+	border: 0;
+	margin-top: 40px;
+}
+.block3 input::placeholder {
+	font-size: 16px;
+	padding-left: 60px;
+  }
+
+.block4 {
+	background-color: #2D2D2D;
+	width: 580px;
+	height: 485px;
+	margin: 390px 0 0 90px;
+  }
+.put3 {
+	width: 315px;
+	height: 203px;
+	color: #FFFFFF;
+	margin: 140px 0 0 80px;
+  }
+.put3 h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    letter-spacing: 0.3px; /*межбуквенный интервал*/
+    width: 180px;
+    height: 24px;
+  }
+.put3 p{
+    font-size: 16px;
+    font-family: 'OpenSans-regular', sans-serif;
+    line-height: 28px;
+    width: 315px;
+    height: 45px;
+	padding-top: 15px;
+  }
+.put3 p:nth-of-type(3n){
+	margin-top: -30px;
+}
+
+
+
+
+.box7 {
+	background-color: #313030;
+	width: 1579px;
+	height: 113px;
+	/*margin-top: 120px;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #B8B8B8;
+	margin-top: 210px;
+}
+.box7 p{
+	padding-left: 170px;
+}
+.block5 img{
+	padding-right: 15px;
+}
+.block5{
+	margin-right: 150px;
+}
+
+
+.visible {
+	width: 197px;
+	height: 37px;
+	background-color: #000000;
+	opacity: 50%;
+	display: none;
+	margin-left: 16px;
+	margin-top: -40px;
+	position: absolute;
+	
+}
+.visible h3{
+	text-align: center;
+	margin-top: 5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.visible2 {
+	display: block;
+}
+
+
+
+
+/*@media  (max-width: 1593px) {
+	.page1 {
+		min-height: 688px;
+    	max-width: 1579px;
+	}
+	.head { 
+		flex-wrap: wrap; /*переносит на новую строку при уменьшении экрана*/
+    	/*max-width: 70vw;
+		min-height: 80px;
+	}
+}
+@media  (max-width: 887px) {
+	.head { 
+		margin-left: 10vw;
+		max-width: 80vw;
+		justify-content: space-around;
+	}
+	.head li {
+		margin-right: -25px; /*отступ содержимого от границ*/
+		/*margin-left: -60px;
+	}
+}*/
+@media screen and (max-width: 769px) {
+	.page1 {
+		width: 100vw;
+		height: 70vw;
+	}
+	.head,
+	.menu { 
+		width: 70vw;
+		height: 50px;
+		align-items: center;
+		margin-left: 10vw;
+	}
+	.menu,
+	.box7 { 
+		width: 100vw;
+		margin: 0;
+		margin-left: -10vw;
+		padding: 0;
+	}
+	.head li,
+	.menu li {
+		margin: -5px 0 0 0; /*отступ содержимого от границ*/
+		padding: 0;
+		line-height: 10px;
+	}
+	.head a,
+	.menu a {
+		font-size: 8px;
+		padding: 20px;
+	}
+	.box1,
+	.box2,
+	.box3,
+	.box4,
+	.image3,
+	.box5,
+	.box6 {
+		width: 100vw;
+		height: 259px;
+		margin-left: 10vw;
+	}
+	.box2,
+	.box3,
+	.box4,
+	.box6,
+	.block3 {
+		height: 100%;
+		margin-top: 10vh;
+	}
+	.box5 {
+		margin: 0;
+		height: 150px;
+	}
+	.box1 h1,
+	.box2 h1,
+	.box3 h1,
+	.box4 h1,
+	.box5 h1,
+	.box6 h1{
+		font-size: 20px;
+		letter-spacing: 0.2px; /*межбуквенный интервал*/
+		width: 70vw;
+		height: 30px;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-left: 20px;
+		text-align: center;
+	}
+	.box3 h1,
+	.box3 p,
+	.box5 h1 {
+		padding-left: 0;
+	}
+
+	.box1 p,
+	.box2 p,
+	.box3 p,
+	.box4 p,
+	.box5 p,
+	.box6 p {
+		font-size: 10px;
+		line-height: 15px;
+		width: 70vw;
+		margin: 0 0 20px 20px;
+		text-align: center;
+	}
+	.box5 h1,
+	.box5 p {
+		padding-top: 0;
+		margin-left: 0;
+	}
+	.box1 img {
+		Width: 50vw;
+		Height: 30vw;
+		margin: 95px 0 0 -60vw;
+	}
+	.box1 button,
+	.box2 button {
+		width: 20vw;
+		padding: 10px;
+	}
+	.box2 button,
+	.block3 {
+		margin: 0;
+	}
+	.box1 a,
+	.box2 a,
+	.block2 a,
+	.box5 button {
+		font-Size: 12px;
+	}
+	
+	.image {
+		width: 40vw;
+		margin: -40px 0 0 30vw;
+	}
+	.image p,
+	.image h1,
+	.block,
+	.block2 p,
+	.block2 h1 {
+		width: 40vw;
+		margin: 0;
+		text-align: start;
+	}
+	.image h1,
+	.block2 h1 {
+		margin: 10px;
+		font-size: 15px;
+	}
+	.image img{
+		width: 20px;
+		height: 20px;
+	}
+	.hr1 {
+		Width: 70vw;
+		margin-left: 3vw;
+	}
+	.hr2,
+	.hr3,
+	.block3 hr {
+		Width: 30vw;
+		margin-left: 24vw;
+		margin-top: 0;
+	}
+	.image2 {
+		margin: 0 0 0 -4vw;
+	}
+	.image3 img{
+		height: 30vw;
+		width: 25vw;
+	}
+	.image2 img,
+	.image4 img{
+		padding: 0;
+		height: 10vw;
+		width: 10vw;
+	}
+	.image3 {
+		margin: 5vw 0 0 5vw;
+	}
+
+	.block2 ul,
+	.put3 { 
+		margin: 10px 0 0 0;
+	}
+	.block2 li{
+		padding-left: 10px;
+	}
+	.image4 {
+		margin: 4vw 0 0 5vw;
+	}
+	.box5 input,
+	.box5 button{
+		width: 60vw;
+		height: 5vw;
+		border-radius: 5px;
+	}
+	.box5 button{
+		width: 20vw;
+	}
+	.box5 form {
+		padding-top: 0;
+	}
+	.put1,
+	.put2 {
+		margin: 20px 0 0 -40px;
+	}
+	.put1 input{
+		width: 30vw;
+		height: 5vw;
+		border-radius: 5px;
+		margin-left: 10vw;
+	}
+	.put2 input{
+		width: 85vw;
+		height: 10vw;
+		border-radius: 5px;
+		margin: 0 0 0 20px;
+	}
+	.put2 button{
+		width: 85vw;
+		height: 10vw;
+		border-radius: 5px;
+		font-size: 15px;
+		margin: 20px 0 0 20px;
+	}
+	.box5 input::placeholder,
+	.block3 input::placeholder {
+		font-size: 10px;
+		padding-left: 20px;
+	  }
+	  .block4 {
+		width: 60%;
+		height: 18vh;
+		margin: 20px 0 0 10%;
+	  }
+	  .box6 {
+		flex-direction: column;
+	  }
+	  .put3 h1{
+		font-size: 20px;
+		letter-spacing: 0.2px; /*межбуквенный интервал*/
+		width: 60vw;
+		height: 30px;
+		line-height: 20px;
+		margin-top: 10px;
+		margin-left: 0;
+		text-align: center;
+	}
+	.put3 p {
+		font-size: 10px;
+		line-height: 10px;
+		width: 60vw;
+		height: 2vw;
+		margin: 0;
+		text-align: center;
+	}
+	.put3 p:nth-of-type(3n){
+		margin-top: 0;
+	}
+	.box7 { 
+		width: 100vw;
+		height: 10vw;
+		margin-top: 10vw;
+		margin-left: 0;
+		padding: 0;
+	}
+	.box7 p {
+		font-size: 10px;
+		padding: 20px;
+	}
+	.block5 {
+		margin-right: 35px;
+	}
+	.block5 img{
+		padding-right: 5px;
+		height: 5vw;
+		width: 5vw;
+	}
+
+}
+
+@media (max-width: 480px) and (orientation:portrait) {
+
+	.page1 {
+		height: 70vw;
+	}
+	.head { 
+		width: 100vw;
+		height: 20px;
+		margin: 0;
+		padding: 0;
+	}
+	.head ul{
+		margin: 0;
+		padding: 0;
+	}
+	.head a {
+		padding: 6px;
+	}
+	.box1 h1,
+	.box2 h1,
+	.box3 h1,
+	.box4 h1,
+	.box5 h1,
+	.box6 h1{
+		font-size: 10px;
+		margin-left: 0;
+		height: 15px;
+	}
+	.box1 p,
+	.box2 p,
+	.box3 p,
+	.box4 p,
+	.box5 p,
+	.box6 p {
+		font-size: 8px;
+		line-height: 15px;
+		width: 70vw;
+		margin: 0 ;
+		text-align: center;
+	}
+	.box1 button,
+	.box2 button {
+		width: 20vw;
+		padding: 0;
+		margin-top: 30vw;
+	}
+	.box2 button {
+		margin-top: 20px;
+	}
+	.box1,
+	.box2,
+	.box3,
+	.box4,
+	.image3,
+	.box5,
+	.box6 {
+		margin-top: 0;
+	}
+	.image p,
+	.image h1,
+	.block,
+	.block2 p,
+	.block2 h1 {
+		width: 30vw;
+		margin-left: 20px;
+		text-align: start;
+	}
+	.image img{
+		width: 10px;
+		height: 10px;
+	}
+
+}

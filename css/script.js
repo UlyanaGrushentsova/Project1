@@ -21,18 +21,3 @@ let buttons = document.querySelectorAll('.popup');
 
 
 
-/*мой вариант
-					let button = document.querySelector('.popup');
-					button.addEventListener('mouseover', showPopup);
-					
-					function showPopup() {
-						document.querySelector('.visible').classList.add('visible2');
-					}
-
-					button.addEventListener('mouseout', hidePopup);
-					
-					function hidePopup() {
-						document.querySelector('.visible').classList.remove('visible2');
-					}
-
-*/

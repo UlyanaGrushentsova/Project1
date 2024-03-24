@@ -344,7 +344,10 @@ body {
 }
 .image4{
 	margin-top: 55px;
-	margin-left: 30px;*/
+	margin-left: 30px;
+	display: flex;
+	flex-direction: row;
+
 }
 .image4 img{
 	padding-left: 15px;
@@ -528,12 +531,13 @@ body {
 
 .visible {
 	width: 197px;
-	height: 37px;
+	height: 35px;
 	background-color: #000000;
 	opacity: 50%;
 	display: none;
 	margin-left: 16px;
-	margin-top: -40px;
+	margin-bottom: 5px;
+	bottom: 0px;
 	position: absolute;
 	
 }
@@ -547,33 +551,16 @@ body {
 .visible2 {
 	display: block;
 }
-
-
-
-
-/*@media  (max-width: 1593px) {
-	.page1 {
-		min-height: 688px;
-    	max-width: 1579px;
-	}
-	.head { 
-		flex-wrap: wrap; /*переносит на новую строку при уменьшении экрана*/
-    	/*max-width: 70vw;
-		min-height: 80px;
-	}
+.containervisible {
+    position: relative;
+    width: 220px;
+    height: 220px;
 }
-@media  (max-width: 887px) {
-	.head { 
-		margin-left: 10vw;
-		max-width: 80vw;
-		justify-content: space-around;
-	}
-	.head li {
-		margin-right: -25px; /*отступ содержимого от границ*/
-		/*margin-left: -60px;
-	}
-}*/
-@media screen and (max-width: 769px) {
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
 	.page1 {
 		width: 100vw;
 		height: 70vw;
@@ -743,7 +730,7 @@ body {
 		padding-left: 10px;
 	}
 	.image4 {
-		margin: 4vw 0 0 5vw;
+		margin: 2vw 0 0 7vw;
 	}
 	.box5 input,
 	.box5 button{
@@ -833,10 +820,25 @@ body {
 		height: 5vw;
 		width: 5vw;
 	}
+	.containervisible {
+		position: relative;
+		width: 12vw;
+		height: 12vw;
+	}
+	
+	.visible {
+		width: 83%;
+		height: 20px;
+		margin-left: 0;
+		margin-bottom: 17%;
+	}
+	.visible h3{
+		font-size: 6px;
+	}
 
 }
 
-@media (max-width: 480px) and (orientation:portrait) {
+@media screen and (max-width: 480px) and (min-width: 320px)  {
 
 	.page1 {
 		height: 70vw;
@@ -906,6 +908,65 @@ body {
 	.image img{
 		width: 10px;
 		height: 10px;
+	}
+	.box3,
+	.image3 {
+		margin-top: 50vw;
+	}
+	.hr2
+	.hr3,
+	.block3 hr {
+		Width: 25vw;
+	}
+	.menu a{
+		font-size: 7px;
+		padding: 10px;
+	}
+	.box5 button,
+	.box7 p {
+		font-size: 7px;
+	}
+	.image3 {
+		margin-top: 10vw;
+	}
+	.box3 h1,
+	.box3 p,
+	.box4 h1,
+	.box4 p,
+	.box6 h1,
+	.box6 p  {
+		margin-left: 5vw;
+	}
+	.git {
+		margin-top: 15vw;
+	}
+	.git a{
+		font-size: 7px;
+		margin-left: -20px;
+		padding: 10px;
+	}
+	.box5 p {
+		margin-top: 8vw;
+	}
+	.box5 form,
+	.block3 hr {
+		margin-top: 4vw;
+	}
+	.put2{
+		width: 70px;
+	}
+	.put2 button{
+		font-size: 10px;
+	}
+	.block4 p{
+		margin-left: -5vw;
+	}
+	.block4 h1{
+		margin-left: 0;
+	}
+	.box7 img{
+		width: 3vw;
+		height: 3vw;
 	}
 
 }
